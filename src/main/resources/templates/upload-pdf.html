@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload PDF</title>
+</head>
+<body>
+    <h1>Upload a PDF File</h1>
+    <form method="POST" action="/upload-pdf" enctype="multipart/form-data">
+        <input type="file" name="file" accept="application/pdf" />
+        <button type="submit">Upload</button>
+    </form>
+
+    <div>
+        
+        <p th:if="${message}" th:text="${message}"></p>
+    </div>
+</body>
+</html>

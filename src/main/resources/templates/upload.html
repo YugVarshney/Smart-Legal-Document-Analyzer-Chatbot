@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Image</title>
+</head>
+<body>
+    <h1>Upload an Image File</h1>
+    <form method="POST" action="/upload-image" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" />
+        <button type="submit">Upload</button>
+    </form>
+
+    <div>
+        
+        <p th:if="${message}" th:text="${message}"></p>
+    </div>
+</body>
+</html>
